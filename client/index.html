@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatoré</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flex-column">
+        <div class="flex-row" id="header">
+            <img src="./home/logo.png">
+        </div>
+        <div class="flex-row" id="form">
+            <div class="flex-column" id="signup">
+                <h2>Sign up</h2>
+                <input placeholder="Enter your Name" id="name"/>
+                <input placeholder="Enter your Email" id="email"/>
+                <input placeholder="Choose an username" id="username"/>
+                <input placeholder="Choose a password" type="password" id="password"/>
+                <button id="signup-btn">SignUp</button>
+                <p id="signup-mssg"></p>
+            </div>
+            <div class="flex-column" id="login">
+                <h2>Login</h2>
+                <input placeholder="Username" id="user"/>
+                <input placeholder="Password" type="password" id="pass"/>
+                <button id="login-btn">Login</button>
+                <p id="login-mssg"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./client.js"></script>
+</body>
+</html>

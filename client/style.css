@@ -1,0 +1,100 @@
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    
+}
+.flex-column{
+    display:flex;
+    flex-direction: column;
+    
+}
+#header{
+    width:98vw;
+    height:10vh;
+    background-color: lightpink;
+    justify-content: center;
+    border-color: lightgreen;
+    border-width: 0px 0px 10px 0px;
+    border-style: solid;
+}
+#header img{
+    border-radius: 10px;
+    width:190px;
+    margin:5px;
+}
+#form{
+    background-image: url("./home/background.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position-x: center;
+    
+    justify-content: space-around;
+    height: 80vh;
+    font-size: 35px;
+}
+h2{
+    color:white;
+}
+#signup{
+    border-style: solid;
+    border-color: white;
+    
+    border-radius: 20px;
+    padding:15px;
+    background-color: lightsteelblue;
+    align-self: flex-start;
+    margin:20px;
+}
+#login{
+    border-style: solid;
+    border-color: white;
+    padding:15px;
+    border-radius: 20px;
+    margin:20px;
+    align-self: flex-end;
+    background-color: lightsalmon;
+}
+p{
+    color:darkred;
+    font-size: 14px;
+    font-weight: bold;
+}
+input, button{
+    margin-bottom: 10px;
+    max-width: 400px;
+    border-color: transparent;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bolder;
+    color:rgb(80, 80, 80);
+
+}
+input:focus, button:focus{
+    outline:none;
+
+}
+button:hover{
+    background-color: lightgreen;
+}
+
+@media (max-width:640px){
+    #form{
+        flex-direction: column;
+        position: relative;
+        top:170px;
+    }
+    #login, #signup{
+        align-self: center;
+        
+    }
+    input,button{
+        width:50vw;
+    }
+
+}
+@media (max-width:400px){
+    input,button{
+        width:70vw;
+    }
+
+}

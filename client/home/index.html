@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatoré</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body onresize="resizeFunction()">
+    <div class="flex-column">
+        <div class="flex-row" id="header">
+            <img src="./logo.png" id="logo-img">
+            <button id="logout-btn" class="flex-row"><img src="./logout-btn.png"><p>Logout</p></button>
+        </div>
+        <div class="flex-row" id="container">
+            <div id="left" class="flex-column">
+                <div id="left-navbar" class="flex-row"></div>
+                <div id="searchbar" class="flex-row">
+                    <input id="searchFriend" placeholder="Add a friend by Username"/>
+                </div>
+                <div id="suggestions" class="flex-column">
+                    <!-- <div class="flex-row">                     //a friend suggestion
+                        <h3>Harsh Soni</h3>
+                        <button class="add-btn">Add</button>
+                    </div> -->
+                    
+                    
+                </div>   
+                <div id="chats" class="flex-column">
+
+                    <!-- <div class="flex-row chat">
+                        <img src="./profile-pic.png">
+                        <h2>Lorem ipsum dolor sit </h2>
+                    </div> -->
+                   
+                    
+                   
+                </div>
+            </div>
+            <div id="right" class="flex-column">
+                <img src="background.png" id="image">
+                <div id="right-navbar" class="flex-row">
+                    <button id="back-btn">back</button>
+                    <h3 id="frndName"></h3>
+                    <p id="userName"></p>
+                </div>
+                <div id="mssg" class="flex-column">
+                  
+                </div>
+                <div id="input" class="flex-row">
+                    <input type="text" placeholder="Type a message" id="mssgInput"></input>
+                    <button id="send">
+                        <img src="./send-button.png">
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+   <script src="./index.js"></script>
+</body>
+</html>
