@@ -1,3 +1,4 @@
+//index.js home
 document.getElementById("logout-btn").addEventListener("click",()=>{
     window.open("../index.html?logout=true","_self");
 })
@@ -166,14 +167,21 @@ function sendMessage(){
     
 }
 function resizeFunction(){
+    scrollToBottom();
     if(window.innerWidth>640){
         document.getElementById("left").style.width="40%";
         document.getElementById("right").style.width="60%";
         document.getElementById("back-btn").disabled=true;
     }
     else{
-        document.getElementById("left").style.width="100%";
-        document.getElementById("right").style.width="0%";
+        if(document.getElementById("right").style.width=="100%"){
+          document.getElementById("left").style.width="0%";
+          document.getElementById("right").style.width="100%";
+        }
+      else{
+          document.getElementById("left").style.width="100%";
+          document.getElementById("right").style.width="0%";
+      }
         document.getElementById("back-btn").disabled=false;
     }
 }
